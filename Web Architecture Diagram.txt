@@ -1,0 +1,27 @@
+
+
+          +------------------+
+          |     CLIENT       |
+          | (Web Browser)    |
+          +--------+---------+
+                   |
+                   |  HTTP/HTTPS Request
+                   v
+          +------------------+
+          |     WEB SERVER   |
+          | (e.g., Apache)   |
+          +--------+---------+
+                   |
+                   | Server-side Logic / API Calls
+                   v
+          +------------------+
+          |   APPLICATION    |
+          |   (Backend Code) |
+          +--------+---------+
+                   |
+                   | SQL Queries
+                   v
+          +------------------+
+          |    DATABASE      |
+          | (e.g., MySQL)    |
+          +------------------+
