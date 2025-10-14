@@ -1,8 +1,0 @@
-
-
-Browser	Rendering Engine	Description
-Google Chrome	Blink	Fast and optimized for modern web apps.
-Mozilla Firefox	Gecko	Open-source engine emphasizing privacy.
-Safari	WebKit	Apple’s rendering engine optimized for macOS/iOS.
-Microsoft Edge	Blink (Chromium-based)	Uses Chromium’s Blink engine for compatibility.
-Opera	Blink	Based on Chromium with added built-in tools like VPN.
