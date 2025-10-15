@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact</title>
+<style>
+/* === Q7: Contact Form === */
+body{
+  font-family:sans-serif;
+  background:#0b1220;color:white;
+  display:flex;align-items:center;justify-content:center;
+  min-height:100vh;margin:0;
+}
+form{
+  background:#101a33;padding:2rem;border-radius:8px;width:90%;max-width:400px;
+}
+label{display:block;margin-top:1rem;}
+input,textarea{
+  width:100%;padding:0.6rem;margin-top:0.3rem;
+  border-radius:6px;border:1px solid #222;background:#0f1b34;color:white;
+}
+input:focus,textarea:focus{border-color:#6ee7b7;outline:none;}
+button{
+  margin-top:1rem;padding:0.7rem 1.2rem;border:none;
+  background:#6ee7b7;color:#0b1220;border-radius:6px;font-weight:bold;cursor:pointer;
+}
+</style>
+</head>
+<body>
+<form>
+  <h2>Contact Us</h2>
+  <label>Name<input type="text" required></label>
+  <label>Email<input type="email" required></label>
+  <label>Subject<input type="text"></label>
+  <label>Message<textarea rows="4"></textarea></label>
+  <button type="submit">Send Message</button>
+</form>
+</body>
+</html>
