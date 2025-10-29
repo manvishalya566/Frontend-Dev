@@ -1,0 +1,150 @@
+1. Difference Between Frontend, Backend, and Full-Stack Development
+Frontend Development (Client-side)
+
+What users see and interact with directly
+Technologies: HTML, CSS, JavaScript, React, Angular, Vue.js
+Real-world example: The user interface of Amazon.com - product images, navigation menus, shopping cart interface
+Backend Development (Server-side)
+
+Handles data processing, storage, and business logic
+Technologies: Node.js, Python, PHP, Java, databases
+Real-world example: Amazon's payment processing system and inventory management
+Full-Stack Development
+
+Combines both frontend and backend skills
+Can build complete web applications from database to user interface
+Real-world example: A developer who can create both the Amazon shopping interface and the backend order processing system
+
+
+
+2. Client-Server Model Diagram
+text
+┌─────────────┐ HTTP Request ┌─────────────┐
+│ │ ──────────────────────> │ │
+│ CLIENT │ │ SERVER │
+│ │ <────────────────────── │ │
+│ (Browser) │ HTTP Response │ (Web Server)│
+└─────────────┘ (HTML, CSS, JS) └─────────────┘
+
+3. How a Browser Requests and Displays a Web Page
+User Input: User enters URL (e.g., www.example.com)
+DNS Lookup: Browser finds server IP address
+HTTP Request: Browser sends GET request to server
+Server Processing: Server processes request and gathers resources
+HTTP Response: Server sends back HTML, CSS, JavaScript files
+Parsing: Browser parses HTML and builds DOM tree
+Rendering: Browser applies CSS and executes JavaScript
+Display: Complete webpage is displayed to user
+
+
+
+4. Web Development Environment Tools
+ 
+Tool
+Purpose
+VS Code
+Code editor with syntax highlighting and extensions
+Git
+Version control for tracking code changes
+Node.js
+JavaScript runtime for backend development
+Web Browser
+For testing and debugging (Chrome, Firefox)
+Live Server Extension
+Local development server with hot reload
+Browser DevTools
+Debugging and inspecting web pages
+
+5. Web Server Definition and Examples
+Web Server: Software that serves web content to clients over HTTP/HTTPS
+
+Common Web Servers:
+
+Apache HTTP Server: Open-source, widely used
+Nginx: High-performance, often used as reverse proxy
+Microsoft IIS: For Windows environments
+Node.js: JavaScript runtime that can act as server
+
+
+
+6. Development Roles in a Project
+Frontend Developer
+
+Creates user interfaces and client-side functionality
+Ensures responsive design and cross-browser compatibility
+Implements user interactions
+Backend Developer
+
+Builds server-side logic and APIs
+Manages database interactions
+Implements security and authentication
+Database Administrator (DBA)
+
+Designs and maintains database structure
+Optimizes database performance
+Ensures data security and backup
+
+7. VS Code Setup Instructions
+Note: Screenshot would be included here in actual submission
+
+Setup Steps:
+
+Install VS Code from official website
+Install essential extensions:
+Live Server
+Configure settings for HTML, CSS, JS development
+
+8. Static vs Dynamic Websites
+Static Websites
+
+Pre-built files served directly to browser
+Content doesn't change unless manually updated
+Example: Company brochure website, portfolio site
+Dynamic Websites
+
+Content generated on-the-fly based on user requests
+Uses server-side processing and databases
+Example: Facebook, Amazon, Twitter
+
+
+
+9. Web Browsers and Rendering Engines
+ 
+Browser
+Rendering Engine
+Google Chrome
+Blink
+Mozilla Firefox
+Gecko
+Safari
+WebKit
+Microsoft Edge
+Blink (formerly EdgeHTML)
+Opera
+Blink
+Rendering Engine Differences:
+
+Handle CSS, HTML, JavaScript interpretation differently
+May display same website slightly differently
+Performance and feature support varies
+
+
+
+10. Complete Web Architecture Flow
+text
+┌─────────────┐ HTTP Request ┌─────────────┐ Query ┌─────────────┐
+│ │ ──────────────────────> │ │ ───────────────> │ │
+│ CLIENT │ │ SERVER │ │ DATABASE │
+│ │ <────────────────────── │ │ <─────────────── │ │
+│ (Browser) │ HTTP Response │ (Web Server)│ Data Result │ (MySQL, │
+└─────────────┘ (HTML, CSS, JS) └─────────────┘ │ MongoDB) │
+│ │ └─────────────┘
+│ │
+│ API Calls │
+│ │
+└──────────────────────────────────────┘
+External API Integration
+(Payment, Maps, Social Media)
+ 
+ 
+ 
