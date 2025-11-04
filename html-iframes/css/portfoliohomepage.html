@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:Arial, sans-serif;
+  background:#0b1220;
+  color:#e6eef8;
+}
+header{
+  position:fixed;top:0;left:0;right:0;
+  background:#06122a;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:1rem 2rem;
+  color:white;z-index:1000;
+}
+header nav a{
+  color:#a3bffa;text-decoration:none;margin-left:1rem;
+}
+main{
+  margin-top:80px;
+  min-height:80vh;
+  display:flex;align-items:center;justify-content:center;gap:2rem;
+  padding:2rem;
+}
+main img{
+  width:150px;height:150px;border-radius:50%;object-fit:cover;
+  border:3px solid #6ee7b7;
+}
+footer{
+  background:#07162b;
+  text-align:center;
+  padding:1rem;
+  position:relative;bottom:0;width:100%;
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>Your Name</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+<main>
+  <div>
+    <h2>Welcome!</h2>
+    <p>This is my personal portfolio website. I’m a front-end developer passionate about creating clean, accessible designs.</p>
+  </div>
+  <img src="https://picsum.photos/200" alt="Profile">
+</main>
+<footer>© 2025 manvi</footer>
+</body>
+</html>
