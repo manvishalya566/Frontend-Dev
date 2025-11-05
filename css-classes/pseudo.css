@@ -1,0 +1,68 @@
+/* General Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 30px;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+/* Each example box */
+.example {
+  background: #fff;
+  padding: 18px;
+  width: 220px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+/* Button :hover Example */
+.hover-btn {
+  padding: 8px 14px;
+  background: #007bff;
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+.hover-btn:hover {
+  background: #0056b3;
+}
+
+/* Input :focus Example */
+input:focus {
+  border: 2px solid #ff5733;
+  outline: none;
+}
+
+/* Button :active Example */
+.active-btn {
+  padding: 8px 14px;
+  background: #28a745;
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+}
+.active-btn:active {
+  background: #1b7e31;
+}
+
+/* nth-child Example */
+.list-demo li:nth-child(even) {
+  background: #ddd;
+  padding: 4px;
+  border-radius: 4px;
+}

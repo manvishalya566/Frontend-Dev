@@ -1,0 +1,37 @@
+body {
+  background: linear-gradient(135deg, #c9d6ff, #e2e2e2);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial;
+}
+
+.card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.search, .btn, .dropdown {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+}
+
+.btn {
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover { background: #005fc0; }
+
+.search:focus, .dropdown:focus, .btn:focus {
+  outline: 2px solid #007bff;
+}
