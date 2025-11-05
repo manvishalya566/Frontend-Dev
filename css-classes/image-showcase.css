@@ -1,0 +1,57 @@
+/* General Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  margin: 0;
+  padding: 35px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 30px;
+}
+
+/* Gallery Layout */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  justify-items: center;
+}
+
+/* Image Card Styling */
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  width: 250px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+/* Hover Effects */
+.card:hover img {
+  transform: scale(1.1);
+  filter: brightness(0.8);
+}
+
+/* Caption */
+figcaption {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #444;
+}
+
+/* Responsive Layout for Smaller Screens */
+@media (max-width: 700px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
