@@ -1,7 +1,5 @@
 *{box-sizing:border-box;margin:0;padding:0;font-family:Arial}
 body{display:flex;flex-direction:column;min-height:100vh}
-
-/* Header: Flexbox */
 .topbar{
   display:flex;
   justify-content:space-between;
@@ -11,7 +9,6 @@ body{display:flex;flex-direction:column;min-height:100vh}
 }
 .navlinks a{ color:#fff; text-decoration:none; margin-left:18px; }
 
-/* Main area: 2-column Grid (Article + Sidebar) */
 .page-grid{
   display:grid;
   grid-template-columns: 2fr 1fr;
@@ -20,10 +17,8 @@ body{display:flex;flex-direction:column;min-height:100vh}
   flex:1;
 }
 
-/* Article */
 .article{ background:#fff;padding:20px;border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.05); }
 
-/* Inside article: three boxes aligned with Flexbox */
 .article-boxes{
   display:flex;
   gap:12px;
@@ -37,17 +32,14 @@ body{display:flex;flex-direction:column;min-height:100vh}
   text-align:center;
 }
 
-/* Sidebar */
 .sidebar{ background:#f9f9f9;padding:18px;border-radius:8px; }
 
-/* Footer spans full width */
 .page-footer{
   text-align:center;
   padding:14px;
   background:#efefef;
 }
 
-/* Keyframes: animate title fade in + move up once on load */
 @keyframes titleIn {
   from { opacity:0; transform: translateY(18px); }
   to   { opacity:1; transform: translateY(0); }
@@ -56,9 +48,9 @@ body{display:flex;flex-direction:column;min-height:100vh}
   animation: titleIn 0.8s ease-out both;
 }
 
-/* Collapse to single column on mobile */
 @media (max-width: 760px) {
   .page-grid { grid-template-columns: 1fr; padding:18px; }
   .article-boxes { flex-direction:column; }
   .navlinks a { margin-left:12px; }
 }
+                                        
