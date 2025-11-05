@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  color: #fff;
+}
+
+.header, .footer {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  padding: 12px;
+  background: #111;
+}
+
+.header { top: 0; }
+.footer { bottom: 0; }
+
+main {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.linear {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+}
+
+.radial {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, #6a11cb, #2575fc);
+  background-attachment: fixed; /* Parallax-like effect */
+}

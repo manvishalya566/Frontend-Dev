@@ -1,0 +1,17 @@
+body { display: flex; gap: 20px; justify-content: center; padding: 40px; font-family: Arial; }
+
+.box {
+  width: 120px;
+  height: 120px;
+  background: #fff;
+  border: 2px solid #666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.rotate:hover { transform: rotate(20deg); }
+.scale:hover { transform: scale(1.2); }
+.move:hover { transform: translateX(20px) translateY(-10px); }
+.skew:hover { transform: skew(-12deg, 5deg); }

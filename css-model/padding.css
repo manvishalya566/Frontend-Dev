@@ -1,0 +1,41 @@
+body {
+  font-family: Arial;
+  background: #f2f2f8;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Flexbox layout */
+.container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Base box styling */
+.box {
+  width: 160px;
+  padding: 15px;
+  background: #fff;
+  border: 4px solid #aaa;
+  transition: 0.3s;
+}
+
+/* Border variations */
+.solid { border-style: solid; }
+.dashed { border-style: dashed; }
+.double { border-style: double; }
+.groove { border-style: groove; }
+
+/* Rounded corners */
+.rounded { border-radius: 20px; }
+
+/* Padding example */
+.padded { padding: 35px; }
+
+/* Hover transition color change */
+.box:hover {
+  border-color: #6b5cff;
+  transform: translateY(-5px);
+}

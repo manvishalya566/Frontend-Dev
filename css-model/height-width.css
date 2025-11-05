@@ -1,0 +1,39 @@
+body, html { height: 100%; margin: 0; }
+body { display: flex; justify-content: center; align-items: center; background: #fafafa; }
+
+/* Flex container */
+.wrap {
+  display: flex;
+  gap: 20px;
+}
+
+/* Boxes */
+.box {
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Fixed px example */
+.px {
+  width: 180px;
+  height: 120px;
+  background: #4caf50;
+}
+
+/* Percent width + overflow */
+.percent {
+  width: 30%;
+  min-height: 80px;
+  overflow: auto;
+  background: #ff9800;
+}
+
+/* VH height + max-width */
+.vh {
+  min-height: 30vh;
+  max-width: 200px;
+  background: #2196f3;
+}
