@@ -1,0 +1,34 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+    font-family:Arial, sans-serif;
+    padding:20px;
+}
+
+.card-container{
+    display:flex;
+    gap:20px;
+}
+
+.card{
+    flex:1;
+    padding:40px;
+    background:#eee;
+    text-align:center;
+    transition:background .3s;
+}
+
+.card:hover{
+    background:#ccc;
+}
+
+/* Tablet */
+@media(max-width:900px){
+    .card-container{flex-wrap:wrap;}
+    .card{flex:1 1 calc(50% - 20px);}
+}
+
+/* Mobile */
+@media(max-width:600px){
+    .card{flex:1 1 100%;}
+}

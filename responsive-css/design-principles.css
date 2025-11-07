@@ -1,0 +1,24 @@
+body{font-family:Arial, sans-serif;padding:20px;}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+}
+
+.box{
+    padding:30px;
+    background:#eee;
+    text-align:center;
+    transition:.3s;
+}
+
+.box:hover{
+    background:linear-gradient(to right,#6a5acd,#483d8b);
+    color:white;
+}
+
+/* Stack below 600px */
+@media(max-width:600px){
+    .grid{grid-template-columns:1fr;}
+}
