@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Form Validation</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #f7f7f7;
+    }
+    .container {
+        width: 350px;
+        padding: 20px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+    .error {
+        color: red;
+        font-size: 12px;
+        display: none;
+    }
+    .success {
+        color: green;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    button {
+        width: 100%;
+        padding: 10px;
+        background: #007bff;
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Login Form</h2>
+    
+    <input type="text" id="username" placeholder="Username">
+    <p class="error" id="userErr">Username must be at least 5 characters</p>
+    
+    <input type="password" id="password" placeholder="Password">
+    <p class="error" id="passErr">Password must include uppercase, lowercase, number & special character (min 8 chars)</p>
+    
+    <button id="loginBtn">Login</button>
+    
+    <p id="result"></p>
+</div>
+
+
+<script>
+// RegExp Rules
+const userReg = /^.{5,}$/;
+const passReg = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$/;
+
+document.getElementById("loginBtn").addEventListener("click", function () {
+    
+    const username = document.getElementById("username");
+    const password = document.getElementById("password");
+    const userErr = document.getElementById("userErr");
+    const passErr = document.getElementById("passErr");
+    const result = document.getElementById("result");
+    
+    let isValid = true;
+    
+    // Username Validation
+    if (!userReg.test(username.value)) {
+        username.style.border = "2px solid red";
+        userErr.style.display = "block";
+        isValid = false;
+    } else {
+        username.style.border = "2px solid green";
+        userErr.style.display = "none";
+    }
+    
+    // Password Validation
+    if (!passReg.test(password.value)) {
+        password.style.border = "2px solid red";
+        passErr.style.display = "block";
+        isValid = false;
+    } else {
+        password.style.border = "2px solid green";
+        passErr.style.display = "none";
+    }
+
+    // Final Output
+    if (isValid) {
+        result.textContent = "Login Successful!";
+        result.className = "success";
+    } else {
+        result.textContent = "Fix all errors to continue!";
+        result.className = "error";
+    }
+});
+</script>
+
+</body>
+</html>
