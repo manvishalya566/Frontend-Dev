@@ -1,0 +1,20 @@
+<input type="email" id="email" placeholder="Enter email">
+<button onclick="register()">Register</button>
+<p id="msg"></p>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+function register() {
+    let email = document.getElementById("email").value;
+
+    axios.get("http://localhost:3006/users?email=" + email)
+    .then(res => {
+        if (res.data.length > 0) {
+            document.getElementById("msg").innerText = "Email already registered.";
+        } else {
+            axios.post("http://localhost:3006/users", { email })
+                .then(() => document.getElementById("msg").innerText = "Registered Successfully!");
+        }
+    });
+}
+</script>

@@ -1,0 +1,33 @@
+<select id="day">
+  <option>Monday</option>
+  <option>Tuesday</option>
+  <option>Wednesday</option>
+  <option>Thursday</option>
+  <option>Friday</option>
+</select>
+
+<div id="output"></div>
+
+<script>
+async function loadData() {
+    let day = document.getElementById("day").value;
+
+    let res = await fetch("http://localhost:3005/timetable?day=" + day);
+    let data = await res.json();
+
+    if (data.length === 0) {
+        document.getElementById("output").innerText = "No classes today.";
+        return;
+    }
+
+    let html = "";
+    data.forEach(t => {
+        html += `<p>${t.subject} - ${t.faculty} - ${t.time}</p>`;
+    });
+
+    document.getElementById("output").innerHTML = html;
+}
+
+document.getElementById("day").onchange = loadData;
+loadData();
+</script>
