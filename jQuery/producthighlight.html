@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Highlight</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="q2.js"></script>
+
+    <style>
+        .product {
+            border: 1px solid #ccc;
+            padding: 15px;
+            width: 200px;
+            margin: 10px;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+
+        .selected {
+            border: 2px solid red;
+        }
+
+        .discount {
+            background-color: #d4ffcd;
+        }
+
+        .details {
+            display: none;
+            font-size: 12px;
+            color: #333;
+        }
+
+        .favorite {
+            color: gray;
+            cursor: pointer;
+            float: right;
+        }
+
+        .favorite.selected {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Products</h2>
+
+    <div class="product" data-stock="yes" data-discount="true">
+        <span class="favorite">♥</span>
+        <h3>Product A</h3>
+        <p>$100</p>
+        <div class="details">High quality item.</div>
+    </div>
+
+    <div class="product" data-stock="no">
+        <span class="favorite">♥</span>
+        <h3>Product B</h3>
+        <p>$250</p>
+        <div class="details">Limited edition.</div>
+    </div>
+
+    <div class="product" data-discount="true">
+        <span class="favorite">♥</span>
+        <h3>Product C</h3>
+        <p>$300</p>
+        <div class="details">Best seller.</div>
+    </div>
+
+    <div class="product" data-stock="yes">
+        <span class="favorite">♥</span>
+        <h3>Product D</h3>
+        <p>$150</p>
+        <div class="details">Popular item.</div>
+    </div>
+
+    <div class="product">
+        <span class="favorite">♥</span>
+        <h3>Product E</h3>
+        <p>$80</p>
+        <div class="details">Budget friendly.</div>
+    </div>
+
+</body>
+</html>
