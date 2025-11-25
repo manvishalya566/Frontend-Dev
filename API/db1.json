@@ -1,9 +1,0 @@
-{
-  "products": [
-    { "id": 1, "name": "Laptop", "price": 55000, "image": "laptop.jpg" },
-    { "id": 2, "name": "Mouse", "price": 500, "image": "mouse.jpg" },
-    { "id": 3, "name": "Keyboard", "price": 1200, "image": "keyboard.jpg" },
-    { "id": 4, "name": "Monitor", "price": 9000, "image": "monitor.jpg" },
-    { "id": 5, "name": "Headset", "price": 1500, "image": "headset.jpg" }
-  ]
-}
